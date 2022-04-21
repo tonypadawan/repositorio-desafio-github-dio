@@ -24,3 +24,10 @@ Ele vai adicionar o caminho para o nosso repositório no github, é comum ele se
 
 Vai exibir os caminhos adicionandos para o repositório, assim podemos verificar se estão corretos.
 
+## git push
+
+Vai enviar nossos arquivos que foram comitados ao github, utilizamos assim: **git push origin *nome da branch*.**
+
+## git pull
+
+Esse comando ao invés de enviar vai baixar o que está no github para a nossa máquina, ele é utilizado quando o repositório no github possui arquivos que não estão em nossa máquina. Usamos assim: **git pull origin *nome da branch*.**
