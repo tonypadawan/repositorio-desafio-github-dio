@@ -6,3 +6,4 @@ Repositório criado para praticar os conceitos de Git para realizar o desafio de
 
 - [Markdown sintaxe básica](https://www.markdownguide.org/basic-syntax)
 - [Comandos Git](https://comandosgit.github.io/)
+- [Git-Cheat-Sheet](https://about.gitlab.com/images/pressResolve/git-cheat-sheet.pdf)
