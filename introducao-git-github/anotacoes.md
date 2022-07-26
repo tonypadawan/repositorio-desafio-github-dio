@@ -36,6 +36,10 @@ Esse comando ao invés de enviar vai baixar o que está no github para a nossa m
 
 Para configurar uma confiança entre a máquina e o servidor do github, uma chave SSH é utilizada. Para fazer isso devemos seguir os procedimentos:
 
-- Primeiro passo: Criar o par de chaves SSH na máquina, para isso usamos o comando: `ssh-keygen -t ed_25519 -C <email usado no github`. Após isso perguntara em que local será salvo e também solicitara a criação de uma senha.
+- Primeiro passo: Criar o par de chaves SSH na máquina, para isso usamos o comando: `ssh-keygen -t ed25519 -C < email usado no github >`. Após isso perguntará em que local será salvo e também solicitará a criação de uma senha.
 
 - Segundo passo: Após a criação das chaves, devemos adicionar o conteudo da chave pública no área de SSH no github.
+
+- Terceiro passo: No terminal vamos iniciar o agente que irá monitorar o uso de nossa chave, para isso usamos o comando: `eval $(ssh-agent -s)`. E por último informamos qual chave ele deve monitorar: `ssh-add < id-chave privada >`.
+
+Pronto, agora é só testar e ver se funciona corretamente.
