@@ -31,3 +31,11 @@ Vai enviar nossos arquivos que foram comitados ao github, utilizamos assim: **gi
 ## git pull
 
 Esse comando ao invés de enviar vai baixar o que está no github para a nossa máquina, ele é utilizado quando o repositório no github possui arquivos que não estão em nossa máquina. Usamos assim: **git pull origin *nome da branch*.**
+
+# Configurar chave SSH
+
+Para configurar uma confiança entre a máquina e o servidor do github, uma chave SSH é utilizada. Para fazer isso devemos seguir os procedimentos:
+
+- Primeiro passo: Criar o par de chaves SSH na máquina, para isso usamos o comando: `ssh-keygen -t ed_25519 -C <email usado no github`. Após isso perguntara em que local será salvo e também solicitara a criação de uma senha.
+
+- Segundo passo: Após a criação das chaves, devemos adicionar o conteudo da chave pública no área de SSH no github.
